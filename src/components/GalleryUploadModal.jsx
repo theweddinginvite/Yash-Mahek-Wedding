@@ -6,10 +6,7 @@ import "./GalleryUploadModal.css";
 
 const CEREMONIES = [
   "General / All Events",
-  "Haldi (Dec 5, 12:30 PM)",
-  "Engagement & Godh Bharai (Dec 5, 5:00 PM)",
-  "Sagai & Sangeet (Dec 5, 7:00 PM)",
-  "Baraat & Jaimaal (Dec 6, 10:30 AM)",
+    "Baraat & Jaimaal (Dec 6, 10:30 AM)",
   "Phere (Dec 6, 5:00 PM)",
 ];
 

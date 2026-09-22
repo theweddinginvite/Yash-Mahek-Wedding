@@ -103,38 +103,6 @@ const content = {
   // Front shows name, day, date, time; back reveals description, attire, location, and notes.
   events: [
     {
-      name: "Haldi",
-      meal: "Lunch to follow",
-      day: "Saturday",
-      date: "December 5, 2026",
-      time: "12:30 PM",
-      description: "A joyful and vibrant ceremony of turmeric blessings, love, and sunny smiles.",
-      attire: "Shades of Pink",
-      location: "Poolside Lawn",
-      note: "Get ready for color, music, and haldi fun!",
-    },
-    {
-      name: "Engagement & Godh Bharai",
-      day: "Saturday",
-      date: "December 5, 2026",
-      time: "5:00 PM",
-      description: "Auspicious ring ceremony and traditional blessings with friends and family.",
-      attire: "Glam and Glitter",
-      location: "Grand Ballroom",
-      note: "Followed by dinner, music & celebration.",
-    },
-    {
-      name: "Sagai & Sangeet",
-      meal: "Dinner to follow",
-      day: "Saturday",
-      date: "December 5, 2026",
-      time: "7:00 PM",
-      description: "An enchanting event of music, dance performances and celebrations.",
-      attire: "Glam and Glitter",
-      location: "Grand Ballroom",
-      note: "Celebration followed by music and dinner.",
-    },
-    {
       name: "Baraat & Ghurchari",
       day: "Sunday",
       date: "December 6, 2026",
@@ -308,8 +276,8 @@ const content = {
       question: "What are the dress codes and themes for the events?",
       answer:
         "We encourage you to dress in accordance with the ceremony themes:\n" +
-        "• Haldi (Dec 5, 12:30 PM): Shades of Pink\n" +
-        "• Engagement & Godh Bharai (Dec 5, 5:00 PM): Glam and Glitter\n" +
+        
+        
         "• Wedding Day (Dec 6): Ethnic Wear",
     },
     {

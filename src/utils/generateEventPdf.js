@@ -105,7 +105,7 @@ export function getWhatsAppShareText(couple, rawEvents, venue) {
   const p2 = (couple?.partner2 || "Groom").replace(/oratna/i, "");
 
   let text = `*The wedding of ${p1} & ${p2}*\n`;
-  text += `*December 5-6, 2026*\n\n`;
+  text += `*December 6, 2026*\n\n`;
   text += `✨ *Events & Itinerary*\n\n`;
 
   events.forEach((ev) => {
@@ -200,7 +200,7 @@ export async function createEventPdfDocument({ events: rawEvents, couple, venue 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(isGroomSide ? 9.0 : 9.5);
   doc.text(
-    "December 5 – 6, 2026  ·  Winsome Resort & Spa, Jim Corbett",
+    "December 6, 2026  ·  Winsome Resort & Spa, Jim Corbett",
     pageWidth / 2,
     y,
     { align: "center" }
