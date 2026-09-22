@@ -38,7 +38,6 @@ function buildWhatsAppUrl(data, whatsappNumber) {
     ...(isAttending
       ? [
           `Total Guests: ${data.guests || 1}`,
-          `Expected Arrival: ${data.expectedArrival || `${data.arrivalDate || "5 Dec"}, ${data.arrivalTime || "12"} ${data.arrivalPeriod || "PM"}`}`,
           `Parking Required: ${data.parkingRequired || "No"}`,
         ]
       : []),
@@ -278,51 +277,7 @@ function RsvpForm({ appsScriptUrl, whatsappNumber, onCelebrate }) {
         </label>
       </div>
 
-      {form.attending === "Yes" && (
-        <div className="rsvp-form-fields__arrival-group">
-          <span className="rsvp-form-fields__label-text">Expected Arrival (Date &amp; Time)</span>
-          <div className="rsvp-form-fields__arrival-row">
-            <label className="rsvp-arrival-field rsvp-arrival-field--date">
-              <span className="rsvp-arrival-field__sublabel">Date</span>
-              <select
-                value={form.arrivalDate}
-                onChange={(e) => setForm({ ...form, arrivalDate: e.target.value })}
-                aria-label="Arrival Date"
-              >
-                <option value="5 Dec">5 Dec</option>
-                <option value="6 Dec">6 Dec</option>
-              </select>
-            </label>
 
-            <label className="rsvp-arrival-field rsvp-arrival-field--time">
-              <span className="rsvp-arrival-field__sublabel">Time</span>
-              <select
-                value={form.arrivalTime}
-                onChange={(e) => setForm({ ...form, arrivalTime: e.target.value })}
-                aria-label="Arrival Time"
-              >
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((hour) => (
-                  <option key={hour} value={String(hour)}>
-                    {hour}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="rsvp-arrival-field rsvp-arrival-field--period">
-              <span className="rsvp-arrival-field__sublabel">AM/PM</span>
-              <select
-                value={form.arrivalPeriod}
-                onChange={(e) => setForm({ ...form, arrivalPeriod: e.target.value })}
-                aria-label="AM or PM"
-              >
-                <option value="AM">AM</option>
-                <option value="PM">PM</option>
-              </select>
-            </label>
-          </div>
-        </div>
-      )}
 
       <label>
         <span className="rsvp-form-fields__label-text">Parking required?</span>

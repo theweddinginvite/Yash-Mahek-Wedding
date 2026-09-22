@@ -163,8 +163,8 @@ const content = {
             name: "Moradabad",
             distance: "~81 km · ~2 hrs",
             details: [
-              { text: "*Route 1* — Tanda → Bajpur → Ramnagar  ✅ *Recommended*" },
-              { text: "*Route 2* — Kashipur → Ramnagar" },
+              { text: "Route 1 — Tanda → Bajpur → Ramnagar  ✅ Recommended" },
+              { text: "Route 2 — Kashipur → Ramnagar" },
             ],
           },
           {
