@@ -308,7 +308,6 @@ const content = {
       answer:
         "If you upload photos, stories, or reels anywhere on social media (Instagram, Facebook, etc.), please use our wedding hashtags:\n\n" +
         "#YashMahekWedding\n" +
-        "#YashMahekWedding\n" +
         "#MahekYashWedding\n" +
         "#YashKiMahek\n\n" +
         "You can also upload your candid photos and videos directly to our wedding album:",
